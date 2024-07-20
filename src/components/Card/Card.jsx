@@ -20,10 +20,10 @@ export default function Card({ productDetails }) {
             alt="product image"
           />
           <div className=" flex items-center justify-center  lg:gap-6 gap-2 lg:p-2  absolute bottom-3 right-0 left-0 opacity-0 group-hover:opacity-100 transition-all	duration-1000	">
-            <Link
+            <span
               onClick={()=>addToWishlist(id)}
               className="fa-solid fa-heart text-sm bg-lime-500 rounded-full p-3  text-white"
-            ></Link>
+            ></span>
             <div
               onClick={() => addToCart({ id })}
               className="fa-solid fa-cart-plus cursor-pointer text-sm bg-lime-500 rounded-full p-3 text-white"

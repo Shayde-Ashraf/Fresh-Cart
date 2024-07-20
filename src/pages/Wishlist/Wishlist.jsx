@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { data } from "autoprefixer";
 
 export default function Wishlist() {
-  const { wishlist, removeWishlistItems,  } =
+  const { wishlist, removeWishlistItems, loading } =
     useContext(wishlistContext);
   return (
     <>
@@ -47,6 +47,7 @@ export default function Wishlist() {
                     </tr>
                   </thead>
                   <tbody>
+
                     {wishlist?.data?.map((item) => (
                       <tr
                         key={item.id}

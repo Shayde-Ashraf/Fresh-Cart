@@ -69,7 +69,7 @@ export default function Navbar() {
                   </Link>
                   <Link
                     to="/wishlist"
-                    type="button"
+                  
                     className="relative  inline-flex items-center p-3  text-xl text-center "
                   >
                     <i className=" cursor-pointer text-neutral-600 fa-solid fa-heart hover:text-neutral-900"></i>

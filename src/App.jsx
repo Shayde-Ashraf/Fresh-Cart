@@ -95,6 +95,14 @@ function App() {
           ),
         },
         {
+          path: "/fresh-cart/",
+          element: (
+            <ProtectedRoute>
+              <Home/>
+            </ProtectedRoute>
+          ),
+        },
+        {
           path: "/allorders",
           element: (
             <ProtectedRoute>
